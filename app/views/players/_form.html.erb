@@ -1,0 +1,105 @@
+<%= form_for(@player) do |f| %>
+  <% if @player.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@player.errors.count, "error") %> prohibited this player from being saved:</h2>
+
+      <ul>
+      <% @player.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :team_id %><br />
+    <%= f.text_field :team_id %>
+  </div>
+  <div class="field">
+    <%= f.label :last_name %><br />
+    <%= f.text_field :last_name %>
+  </div>
+  <div class="field">
+    <%= f.label :first_name %><br />
+    <%= f.text_field :first_name %>
+  </div>
+  <div class="field">
+    <%= f.label :throws %><br />
+    <%= f.text_field :throws %>
+  </div>
+  <div class="field">
+    <%= f.label :position %><br />
+    <%= f.text_field :position %>
+  </div>
+  <div class="field">
+    <%= f.label :wins %><br />
+    <%= f.text_field :wins %>
+  </div>
+  <div class="field">
+    <%= f.label :losses %><br />
+    <%= f.text_field :losses %>
+  </div>
+  <div class="field">
+    <%= f.label :saves %><br />
+    <%= f.text_field :saves %>
+  </div>
+  <div class="field">
+    <%= f.label :games %><br />
+    <%= f.text_field :games %>
+  </div>
+  <div class="field">
+    <%= f.label :games_started %><br />
+    <%= f.text_field :games_started %>
+  </div>
+  <div class="field">
+    <%= f.label :games_complete %><br />
+    <%= f.text_field :games_complete %>
+  </div>
+  <div class="field">
+    <%= f.label :shut_outs %><br />
+    <%= f.text_field :shut_outs %>
+  </div>
+  <div class="field">
+    <%= f.label :era %><br />
+    <%= f.text_field :era %>
+  </div>
+  <div class="field">
+    <%= f.label :innings %><br />
+    <%= f.text_field :innings %>
+  </div>
+  <div class="field">
+    <%= f.label :home_runs %><br />
+    <%= f.text_field :home_runs %>
+  </div>
+  <div class="field">
+    <%= f.label :runs %><br />
+    <%= f.text_field :runs %>
+  </div>
+  <div class="field">
+    <%= f.label :earned_runs %><br />
+    <%= f.text_field :earned_runs %>
+  </div>
+  <div class="field">
+    <%= f.label :hit_batter %><br />
+    <%= f.text_field :hit_batter %>
+  </div>
+  <div class="field">
+    <%= f.label :wild_pitchers %><br />
+    <%= f.text_field :wild_pitchers %>
+  </div>
+  <div class="field">
+    <%= f.label :balk %><br />
+    <%= f.text_field :balk %>
+  </div>
+  <div class="field">
+    <%= f.label :walked_batter %><br />
+    <%= f.text_field :walked_batter %>
+  </div>
+  <div class="field">
+    <%= f.label :struck_out_batter %><br />
+    <%= f.text_field :struck_out_batter %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
