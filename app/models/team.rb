@@ -1,3 +1,3 @@
-class Team < ActiveRecord::Base
-  attr_accessible :city, :division_id, :name
+class Team < ModelXmlBase
+  attr_accessor :id, :city, :division_id, :name
 end

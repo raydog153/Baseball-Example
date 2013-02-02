@@ -1,0 +1,40 @@
+            root        /                             home#home
+            home        /home(.:format)               home#home
+  season_changed        /season_changed(.:format)     home#season_changed
+  league_changed        /league_changed(.:format)     home#league_changed
+division_changed        /division_changed(.:format)   home#division_changed
+         players GET    /players(.:format)            players#index
+                 POST   /players(.:format)            players#create
+      new_player GET    /players/new(.:format)        players#new
+     edit_player GET    /players/:id/edit(.:format)   players#edit
+          player GET    /players/:id(.:format)        players#show
+                 PUT    /players/:id(.:format)        players#update
+                 DELETE /players/:id(.:format)        players#destroy
+           teams GET    /teams(.:format)              teams#index
+                 POST   /teams(.:format)              teams#create
+        new_team GET    /teams/new(.:format)          teams#new
+       edit_team GET    /teams/:id/edit(.:format)     teams#edit
+            team GET    /teams/:id(.:format)          teams#show
+                 PUT    /teams/:id(.:format)          teams#update
+                 DELETE /teams/:id(.:format)          teams#destroy
+       divisions GET    /divisions(.:format)          divisions#index
+                 POST   /divisions(.:format)          divisions#create
+    new_division GET    /divisions/new(.:format)      divisions#new
+   edit_division GET    /divisions/:id/edit(.:format) divisions#edit
+        division GET    /divisions/:id(.:format)      divisions#show
+                 PUT    /divisions/:id(.:format)      divisions#update
+                 DELETE /divisions/:id(.:format)      divisions#destroy
+         leagues GET    /leagues(.:format)            leagues#index
+                 POST   /leagues(.:format)            leagues#create
+      new_league GET    /leagues/new(.:format)        leagues#new
+     edit_league GET    /leagues/:id/edit(.:format)   leagues#edit
+          league GET    /leagues/:id(.:format)        leagues#show
+                 PUT    /leagues/:id(.:format)        leagues#update
+                 DELETE /leagues/:id(.:format)        leagues#destroy
+         seasons GET    /seasons(.:format)            seasons#index
+                 POST   /seasons(.:format)            seasons#create
+      new_season GET    /seasons/new(.:format)        seasons#new
+     edit_season GET    /seasons/:id/edit(.:format)   seasons#edit
+          season GET    /seasons/:id(.:format)        seasons#show
+                 PUT    /seasons/:id(.:format)        seasons#update
+                 DELETE /seasons/:id(.:format)        seasons#destroy

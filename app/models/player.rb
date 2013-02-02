@@ -1,5 +1,5 @@
-class Player < ActiveRecord::Base
-  attr_accessible :balk, :earned_runs, :era, :given_name, :games, :complete_games,
+class Player < ModelXmlBase
+  attr_accessor :id, :balk, :earned_runs, :era, :given_name, :games, :complete_games,
                   :games_started, :hit_batter, :home_runs, :innings, :surname,
                   :losses, :position, :runs, :saves, :shut_outs, :struck_out_batter, :team_id, :throws, :walked_batter, :wild_pitchers, :wins,
                   :at_bats, :hits, :doubles, :triples, :rbi, :steals, :caught_stealing, :sacrifice_hits, :sacrifice_flies, :num_errors,

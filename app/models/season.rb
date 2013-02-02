@@ -1,3 +1,3 @@
-class Season < ActiveRecord::Base
-  attr_accessible :year
+class Season < ModelXmlBase
+  attr_accessor :id, :year
 end

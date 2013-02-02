@@ -1,3 +1,3 @@
-class Division < ActiveRecord::Base
-  attr_accessible :name, :league_id
+class Division < ModelXmlBase
+  attr_accessor :id, :name, :league_id
 end

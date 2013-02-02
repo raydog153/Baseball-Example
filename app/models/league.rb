@@ -1,3 +1,3 @@
-class League < ActiveRecord::Base
-  attr_accessible :name, :season_id
+class League < ModelXmlBase
+  attr_accessor :id, :name, :season_id
 end
